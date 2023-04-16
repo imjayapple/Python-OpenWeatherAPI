@@ -10,3 +10,10 @@ import requests
 # Use setx OPENWEATHERMAP_API_KEY "" in PowerShell, with the key between quotes, to set the environemtn variable
 API_KEY = os.environ.get("OPENWEATHERMAP_API_KEY")  # You can hardcode the API key for testing purposes
 API_URL = "https://api.openweathermap.org/data/2.5/weather"
+
+# Fetch weather for a specific city
+# Query parameters for the API request,
+# "q" = the city name, which is the value of 'city_name'
+# "appid" = the API key for OpenWeatherApp, which is the value of 'API_key'
+# "units"
+def get_weather(city_name):

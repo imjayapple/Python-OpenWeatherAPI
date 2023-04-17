@@ -15,5 +15,10 @@ API_URL = "https://api.openweathermap.org/data/2.5/weather"
 # Query parameters for the API request,
 # "q" = the city name, which is the value of 'city_name'
 # "appid" = the API key for OpenWeatherApp, which is the value of 'API_key'
-# "units"
+# "units" = the unit system to use for the temperature data, set to metric in this case
 def get_weather(city_name):
+        params = {
+        "q": city_name,
+        "appid": API_KEY,
+        "units": "metric"
+    }
